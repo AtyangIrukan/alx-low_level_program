@@ -1,20 +1,20 @@
 #include "main.h"
 
 /**
- * print_most_numbers - prints
- *
- * Return: void
+ * print_line -  checks for checks for a digit (0 through 9).
+ * @n: n -  Variable
+ * Return: Always 0.
  */
-
-
-void print_most_numbers(void)
+void print_line(int n)
 {
-	char c;
+	int x;
 
-	for (c = '0'; c <= '9'; c++)
+	if (n > 0)
 	{
-		if (!(c == '2' || c == '4'))
-			_putchar(c);
+		for (x = 1; x <= n; x++)
+		{
+			_putchar(95);
+		}
 	}
 	_putchar('\n');
 }
